@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 15</title>
+  </head>
+
+  <body>
+    <script>
+      const retornarMes = (numero) => {
+        //El numero debe ser del rango [1-12]
+        const meses = [
+          "Enero",
+          "Febrero",
+          "Marzo",
+          "Abril",
+          "Mayo",
+          "Junio",
+          "Julio",
+          "Agosto",
+          "Septiembre",
+          "Octubre",
+          "Noviembre",
+          "Diciembre",
+        ];
+        return meses[numero - 1];
+      };
+
+      let numero = 0;
+      do {
+        numero = parseInt(prompt(`Ingrese el número del mes: `));
+        if (numero < 1 || numero > 12 || isNaN(numero)) {
+          alert(`!El número ingresado no corresponde a un mes!`);
+        }
+      } while (numero < 1 || numero > 12 || isNaN(numero));
+      document.write(`Mes: ${retornarMes(numero)}`);
+    </script>
+  </body>
+</html>
