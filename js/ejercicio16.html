@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+
+<body>
+
+<script>
+
+let inicio = parseInt(prompt(`Ingrese el número inicial:`));
+
+let final = parseInt(prompt(`Ingrese el número final:`));
+
+const sumarRango = (num1, num2) => {
+
+    let suma = 0;
+
+    for(let i = num1; i <= num2; i++){
+
+        suma += i;
+    }
+
+    return suma;
+};
+
+if(inicio <= final){
+
+    document.write(`La suma del rango entre ${inicio} y ${final} es: ${sumarRango(inicio, final)}`);
+
+}else{
+
+    document.write(`El número inicial debe ser menor o igual al número final.`);
+}
+
+</script>
+
+</body>
+</html>
