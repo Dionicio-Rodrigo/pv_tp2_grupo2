@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 14</title>
+  </head>
+  <body>
+    <script>
+      const duplicado = (arreglo) => {
+        let nuevo_arreglo = [];
+        arreglo.forEach((elemento) => {
+          nuevo_arreglo.push(elemento * 2);
+        });
+        return nuevo_arreglo;
+      };
+
+      let cant_num = parseInt(
+        prompt(`Ingrese la cantida de números que quiere guardar:`),
+      );
+      const numeros = [];
+
+      for (let i = 0; i < cant_num; i++) {
+        let numero = parseInt(prompt(`Ingrese un número: `));
+        numeros.push(numero);
+      }
+
+      document.write(`Arreglo original: ${numeros} <br>`);
+      document.write(`Arreglo duplicado: ${duplicado(numeros)}`);
+    </script>
+  </body>
+</html>
