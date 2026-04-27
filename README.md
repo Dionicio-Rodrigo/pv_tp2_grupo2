@@ -1,4 +1,4 @@
-﻿# Grupo 1 - TP2 "JavaScript"
+﻿# Grupo 2 - TP2 "JavaScript"
 
 ## Integrantes
 
