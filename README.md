@@ -9,6 +9,8 @@ Cruz Benavidez Rita Melina / rmelinacruzb
 Mamaní Lucas Darío Joaquín / Lucas4414  
 Mamani Lucas Lautaro / lucasmamani-lxl
 
+Leonel Maximiliano Aramayo Estrada / Leomax99
+
 ## Parte I (Ejercicios del 1 al 18)
 
 ### Operaciones Básicas de JavaScript [1-8]
@@ -19,8 +21,8 @@ Mamani Lucas Lautaro / lucasmamani-lxl
 2. **Números Pares**\
    La variable `cant` decide cuantos números pares mostrar. Para mostrar los números se utiliza la función flecha `pares(cant)`, la cual recorre el rango de [0 -`cant`] y por cada número se llama a la consola y lo multiplica por 2.
 
-3. **Titulo**\
-   Descripción
+3. **Volumen de Esfera**\
+   Se declaran la variables constantes `radio` y `PI` para agregar el valor de los datos. Luego se crea la variable `Volumen` para empezar a hacer el calculo, se codifica la formula dada en lenguaje de javascript `(4/3)*PI*(radio)**2`. Y por ultimo se escribe con el `console.log()` la respectiva salida.
 
 4. **Area del perimetro de un rectangulo**\
    Se declaran dos variables numéricas que representan los lados del rectángulo que apartir de estos valores se calcula el área utilizando la fórmula `lado1 * lado2` y el perímetro con la expresión `2 * (lado1 + lado2)`.Los resultados se muestran por consola mediante `console.log()`, utilizando template strings para incluir los valores calculados en el mensaje.  
@@ -33,8 +35,12 @@ Mamani Lucas Lautaro / lucasmamani-lxl
 6. **Titulo**\
    Descripción
 
-7. **Titulo**\
-   Descripción
+7. **El nombre mas Largo**\
+   Primero creamos el array `nombres` y le colocamos como minio 6 nombres, en mi caso use los nombres de los integrantes del grupo.
+   Ahora usamos la estructura `for` para mostrar cada nombre, usando el iterador `i`, la funcion `nombres.length` para marcar el limite del arregle y que sume de a 1 para mostrar cada elemento del arreglo.
+   Para saber de quien es el nombre mad largo primero marcamos la variable de bloque `nombreLargo` para guardar el valor del nombre mas largo del arreglo, el cual se obtiene usando la funcion `nombres[0].length` usando los corchetes para seleccionar un elemento del arreglo en especifico. Usamos la estructura `for` otra vez para recorrer el arreglo con otro iterador `j` por las dudas de no chocar con el otro iterador.
+   Dentro de la estructura for usamos una condicional `if` para comparar las variables `nombreLargo` y `nombres[j]` y asi saber cual string es el mas largo del arreglo. Una vez detectado el nuevo elemento reemplazara al anterior dato almacenado en la variable `nombreLargo`.
+   Ya por ultimo usamos el `console.log(nombreLargo)` para mostrar en pantalla el nombre mas largo.
 
 8. **Clasificacion y promedio de notas**\
    Se utiliza un array constante `notas` con 10 valores, tambien dos arrays vacios `aprobadas` y `desaprobadas` declarados con let ya que su contenido se modifica.Con for se recorre el array acumulando la suma y mediante if/else clasifica cada nota en el array correspondiente usando `push()`.Luego con 2 for separados se muestran las notas aprobadas y desaprobadas.Por ultimo, se muestra el promedio general con `toFixed(2)` y la cantidad de notas aprobadas.   
@@ -50,7 +56,7 @@ Mamani Lucas Lautaro / lucasmamani-lxl
 10. **Ingreso de números y cálculo de promedio**\
    Se solicita al usuario la cantidad de números que desea ingresar mediante `prompt()`, convirtiendo el valor a entero con `parseInt()`. Luego, utilizando un ciclo `for`, se piden los números uno por uno, los cuales se almacenan en un array y al mismo tiempo se acumulan en una variable suma.Una vez finalizado el ingreso, se calcula el promedio dividiendo la suma total por la cantidad de números ingresados. Finalmente, se muestran en pantalla los números ingresados y el promedio utilizando `document.write()` y template strings.
 
-11. **Titulo**\
+11. **Calculo de Consumo de Nafta por Km Recorridos**\
     Descripción
 
 12. **Determinacion de un numero par/impar**\
