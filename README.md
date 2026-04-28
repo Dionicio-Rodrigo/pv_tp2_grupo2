@@ -1,4 +1,4 @@
-﻿# Grupo 1 - TP2 "JavaScript"
+﻿# Grupo 2 - TP2 "JavaScript"
 
 ## Integrantes
 
@@ -31,8 +31,8 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
    Creamos una función llamada `conversion()`la cual recibe un número y devuelve el número multiplcado por 60. Esta función nos deja pasar de minutos y luego a segundos.\
    Declaramos los valores de horas, minutos y los mostramos en consola. Escribimos en consola los segundos totales, llamando a la función para los minutos y para las horas los llamamos dos veces.
 
-6. **Titulo**\
-   Descripción
+6. **Array con edades y cálculo de promedio**\
+   En este ejercicio creamos un array denominado edades donde almacenamos distintas edades numéricas. Luego recorrimos el array utilizando un ciclo for para mostrar cada edad por consola y fuimos acumulando los valores en una variable auxiliar. Finalmente calculamos el promedio general de las edades dividiendo la suma total por la cantidad de elementos almacenados en el array.
 
 7. **El nombre mas Largo**\
    Primero creamos el array `nombres` y le colocamos como minio 6 nombres, en mi caso use los nombres de los integrantes del grupo.
@@ -61,8 +61,8 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
 12. **Determinacion de un numero par/impar**\
     Se solicita un numero al usuario mediante `prompt()`, el cual es convertido a entero con `parseInt()`, ya que `prompt()` siempre devuelve un string.Se evalua con if/else si el numero es valido y si es par o impar.Luego el resultado se muestra en la pagina HTML con `document.write()` utilizando template strings.
 
-13. **Titulo**\
-    Descripción
+13. **Carga y visualización de números en un arreglo**\
+    En este ejercicio creamos una función llamada mostrarArreglo que recibe un array numérico como parámetro y muestra cada elemento en una línea diferente. Primero solicitamos al usuario la cantidad de números que desea ingresar mediante prompt(). Luego utilizamos un ciclo for para pedir cada número de forma iterativa y almacenarlo en un array utilizando push(). Finalmente llamamos a la función para recorrer el arreglo y mostrar los números ingresados usando document.write().
 
 14. **Titulo**\
     Descripción
@@ -72,8 +72,8 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
     Cuando el número se encuentre entre el rango llamamos a la función `retornarMes()`, dentro de esta función se crea un arreglo con todos los meses del año ["Enero"-"Diciembre"] y devolvemos el elemento con el indice del numero menos 1, ya que, en JavaScript los arreglos empiezan en 0\
     Obviamente se escribe en el HTML el mes que devolvera la función.
 
-16. **Titulo**\
-    Descripción
+16. **Suma de números dentro de un rango**\
+    En este ejercicio desarrollamos una función llamada sumarRango que recibe dos números enteros: un número inicial y un número final. Utilizamos prompt() para solicitar ambos valores al usuario y luego empleamos un ciclo for para recorrer todos los números comprendidos en ese rango, incluyendo los extremos. Durante el recorrido fuimos acumulando la suma de los valores en una variable auxiliar y finalmente mostramos el resultado utilizando document.write().
 
 17. **contar letra "a"**\
     Se implementa una función flecha llamada `contarLetraA` que recibe un string como parámetro.Luego ,dentro de la función se recorre el texto carácter por carácter mediante un ciclo `for`, comparando cada uno con la letra "a" tanto en mayúscula como en minúscula. Cada vez que se encuentra una coincidencia, se incrementa un contador. El resultado final se retorna y luego se muestra en pantalla utilizando `document.write()`. El valor del texto es ingresado por el usuario mediante `prompt()` .
