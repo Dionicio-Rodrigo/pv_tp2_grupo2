@@ -18,8 +18,8 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
 1. **Presentacion de los integrantes en consola**\
    Se declara una variable constante llamada `integrantes` utilizando const, ya que el valor no va a cambiar.Se le asigna un string con los nombres de los integrantes del grupo.Luego mediante `console.log()` se muestra el mensaje, empleando template strings para incluir el valor de la variable integrantes dentro del texto con `${}`.
 
-2. **Números Pares**\
-   La variable `cant` decide cuantos números pares mostrar. Para mostrar los números se utiliza la función flecha `pares(cant)`, la cual recorre el rango de [0 -`cant`] y por cada número se llama a la consola y lo multiplica por 2.
+2. **Números Impares**\
+   La variable `cant` decide cuantos números impares mostrar. Para mostrar los números se utiliza la función flecha `impares(cant)`, la cual recorre el rango de [0 -`cant`] y por cada número se llama a la consola y lo multiplica por 2 y luego se le suma 1 para que este sea impar.
 
 3. **Volumen de Esfera**\
    Se declaran la variables constantes `radio` y `PI` para agregar el valor de los datos. Luego se crea la variable `Volumen` para empezar a hacer el calculo, se codifica la formula dada en lenguaje de javascript `(4/3)*PI*(radio)**2`. Y por ultimo se escribe con el `console.log()` la respectiva salida.
