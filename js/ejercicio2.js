@@ -4,6 +4,6 @@ const impares = (cant) => {
   }
 };
 
-//Colocar cuantos números pares mostrar (Ej: 10)
+//Colocar cuantos números impares mostrar (Ej: 10)
 let cant = 10;
 impares(cant);
