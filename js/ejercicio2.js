@@ -1,6 +1,6 @@
 const impares = (cant) => {
-  for (let i = 1; i <= cant; i++) {
-    console.log(`N°${i} : ${i * 2}`);
+  for (let i = 0; i < cant; i++) {
+    console.log(`N°${i} : ${i * 2 + 1}`);
   }
 };
 
