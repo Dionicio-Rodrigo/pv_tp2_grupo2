@@ -84,3 +84,11 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
 
 18. **Determinar el mayor entre 2 numeros**\
     Se piden dos numeros al usuario mediante `prompt()`, convertidos a enteros con `parseInt()` y validados con `isNaN()`.Se declara una funcion llamada `calcularMayor` que recibe a numero1 y numero2 como parametros.La cual evalua si el primero numero es mayor, si el segundo es mayor o si son iguales, mostrando el mensaje con `document.write()`.Al terminar la definicion de la funcion, esta es invocada con los valores ingresados.
+
+## Parte II "Eventos y DOM" (Ejercicios del 19 al 25)
+
+### 19. Cambio de Texto
+
+Dentro de la pagina tenemos un parrafo y al boton (`<p>``<button>`), donde cada uno tiene un **#id** diferente para poder referenciarlo dentro del archivo _ejercicio19.js_ donde vamos a colocar un evento _listener_ el cual va a llamar a una función en cuanto el usuario presiones el boton.  
+Dentro del archivo obtenemos los elementos `texto_original``btnCambiar` y los guardamos en una constante cada una, aca tambien creamos el texto alternativo el cual vamos a utilizar. Por ultimo pero lo más importante se le agrega al boton el evento _listener_ donde este llamara a una función cuando el usuario haga un click, la función que se llama es `cambiarTexto(texto,nuevo_texto)` importada desde el archivo _funciones19.js_ que solo cambia el atributo `texto.textContent` por `nuevo_texto`.  
+Obviamente el archivo _ejercicio19.js_ esta dentro de `<script type="module" src="...">` y se incluye el stylesheet para todo el HTML, dentro del header con `<link rel="stylesheet" href="...">`.
