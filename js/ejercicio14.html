@@ -15,9 +15,13 @@
         return nuevo_arreglo;
       };
 
-      let cant_num = parseInt(
-        prompt(`Ingrese la cantida de números que quiere guardar:`),
-      );
+      let cant_num = 0;
+      do {
+        cant_num = parseInt(
+          prompt(`Ingrese la cantida de números que quiere guardar:`),
+        );
+      } while (cant_num <= 0);
+
       const numeros = [];
 
       for (let i = 0; i < cant_num; i++) {

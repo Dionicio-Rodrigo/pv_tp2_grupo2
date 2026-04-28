@@ -7,11 +7,12 @@
   </head>
   <body>
     <script>
+      let kilometros = 0;
       do {
-        let kilometros = parseFloat(
+        kilometros = parseFloat(
           prompt(`Ingrese la cantidad de kilometros recorrido:`, ``),
         );
-      } while (kilometros > 0);
+      } while (kilometros <= 0);
       let litros = parseFloat(prompt(`Cuantos litros utilizo su auto: `, ``));
 
       document.write(
