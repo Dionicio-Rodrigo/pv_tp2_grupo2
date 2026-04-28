@@ -56,7 +56,8 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
     Se solicita al usuario la cantidad de números que desea ingresar mediante `prompt()`, convirtiendo el valor a entero con `parseInt()`. Luego, utilizando un ciclo `for`, se piden los números uno por uno, los cuales se almacenan en un array y al mismo tiempo se acumulan en una variable suma.Una vez finalizado el ingreso, se calcula el promedio dividiendo la suma total por la cantidad de números ingresados. Finalmente, se muestran en pantalla los números ingresados y el promedio utilizando `document.write()` y template strings.
 
 11. **Calculo de Consumo de Nafta por Km Recorridos**\
-    Descripción
+    Primero se le pide al usuario al cantidad de kilometros y la cantidad de litros para hacer el cálculo de **litrosNafta/kilometros**, pero antes de eso se tiene que verificar que la variable `kilometros` no sea menor o igual a 0 ya que si ocurre la division no tendria sentido.  
+    Posteriormente de recibir ambos datos válidos se escribe en la pagina **Consumo por kilometro:** y al lado colocamos el cálculo.
 
 12. **Determinacion de un numero par/impar**\
     Se solicita un numero al usuario mediante `prompt()`, el cual es convertido a entero con `parseInt()`, ya que `prompt()` siempre devuelve un string.Se evalua con if/else si el numero es valido y si es par o impar.Luego el resultado se muestra en la pagina HTML con `document.write()` utilizando template strings.
@@ -64,8 +65,11 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
 13. **Carga y visualización de números en un arreglo**\
     En este ejercicio creamos una función llamada mostrarArreglo que recibe un array numérico como parámetro y muestra cada elemento en una línea diferente. Primero solicitamos al usuario la cantidad de números que desea ingresar mediante prompt(). Luego utilizamos un ciclo for para pedir cada número de forma iterativa y almacenarlo en un array utilizando push(). Finalmente llamamos a la función para recorrer el arreglo y mostrar los números ingresados usando document.write().
 
-14. **Titulo**\
-    Descripción
+14. **Arreglo Duplicado**\
+    Como siempre utilizamos `promt()` para pedir datos al usuario y `parseInt()` para cambiar de tipo de dato _string_ a _int_.  
+    Primero pedimos la cantidad de elementos para guardar, este número se guardara en una variable y se reutilizara en un bucle `for(i=0, i<cant, i++)`, donde en cada iteración pedimos un nuevo número y lo guardamos con un `arreglo.push(nuevo_numero)`.
+    Ahora que tenemos el arreglo lo podemos pasar por la función `duplicado(arreglo)`, la cual contiene un `arreglo.forEach((elemento)=>{...})` donde recorremos cada uno de los elementos, lo multiplicamos por 2 y lo guardamos en otro `arreglo_duplicado.push(elemento_duplicado)`. Por ultimo devolvemos ese arreglo.  
+    Ahora lo que toca es escribir en la pagina con el `document.write(`...`)` el arreglo original y abajo con un salto de linea al arreglo duplicado.
 
 15. **Meses**\
     Le pedimos al usuario un número entero y verificamos que este dentro del rango [1-12], si no, le pedimos que vuelva a ingresar el número.\
