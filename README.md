@@ -92,6 +92,20 @@ Dentro de la pagina tenemos un parrafo y el boton (`<p>``<button>`), donde cada 
 Dentro del archivo obtenemos los elementos `texto_original``btnCambiar` y los guardamos en una constante cada una, aca tambien creamos el texto alternativo el cual vamos a utilizar. Por ultimo pero lo más importante se le agrega al boton el evento _listener_ donde este llamara a una función cuando el usuario haga un click, la función que se llama es `cambiarTexto(texto,nuevo_texto)` importada desde el archivo _funciones19.js_ que solo cambia el atributo `texto.textContent` por `nuevo_texto`.  
 Obviamente el archivo _ejercicio19.js_ esta dentro de `<script type="module" src="...">` y se incluye el stylesheet para todo el HTML, dentro del header con `<link rel="stylesheet" href="...">`.
 
+### 20. Ingreso de datos
+
+Tenemos una pagina donde los elementos `<input type="text" id="...">` y `<label>` estan contenidos dentro de 3 `<div class="contenedorInput">` para el nombre, apellido y Libreta Universitaria. Al final tenemos el `<button id="btnIngresar">` para ingresar los datos en los campos anteriores. Todos estos elementos estan encapsulados en un `<form>`.  
+Ahora dentro del _ejercicio20.js_ buscamos cada elemento para poder guardarlo en una variable con la función `document.querySelector("...")`, donde colocaremos `.contenedorInput > #ID` donde el id sera el nombre del campo que queremos acceder. Por ejemplo si coloco `document.querySelector(".contenedorInput > #Apellido")` accederemos al elemento que tiene el `id="Apellido"` y que se encuentre dentro del elemento con clase `class="contenedorInput"`, en nuestro caso se accedera al `<input >` dentro del `<div>`. Cone le boton hacemos lo mismo pero con "button" para buscar el elemento `<button>`.  
+Ya accedidos todos los elementos podemos añadir un _listener_ al boton para agarrar el `click` del usuario cuando ocurra y llamar a la función flecha que hara un `alert()` en pantalla para mostrar el nombre, apellido y LU ingresados.
+
+> Los datos ingresados son:  
+> Nombre: Hector  
+> Apellido: González  
+> Libreta Universitaria: 6527
+
+Antes de hacer el `alert()` agregamos un `if()` que verificara que los elementos esten no esten vacios y evitar tener un `alert()` vacío.  
+ Por ultimo agregamos un estilo básico con `<link rel="stylesheet" href="...">`. y conectamos el código con el HTML con `<script type="module" src="...">`.
+
 ### 25. Cambio del Color de Fondo
 
 En la pagina solo se encuentra el boton y el body al cual vamos a cambiar de color, _ejercicio25.js_ va a ser el que contenga los elementos `<body>` y `<button>` mediante el `document.querySelect("body")` y `document.getElementById("btnCambiar")`.  
