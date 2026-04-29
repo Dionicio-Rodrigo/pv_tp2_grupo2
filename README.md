@@ -101,9 +101,10 @@ Ya accedidos todos los elementos podemos añadir un _listener_ al boton para aga
 > Los datos ingresados son:  
 > Nombre: Hector  
 > Apellido: González  
-> Libreta Universitaria: 6527  
-> Antes de hacer el `alert()` agregamos un `if()` que verificara que los elementos esten no esten vacios y evitar tener un `alert()` vacío.  
-> Por ultimo agregamos un estilo básico con `<link rel="stylesheet" href="...">`. y conectamos el código con el HTML con `<script type="module" src="...">`.
+> Libreta Universitaria: 6527
+
+Antes de hacer el `alert()` agregamos un `if()` que verificara que los elementos esten no esten vacios y evitar tener un `alert()` vacío.  
+ Por ultimo agregamos un estilo básico con `<link rel="stylesheet" href="...">`. y conectamos el código con el HTML con `<script type="module" src="...">`.
 
 ### 25. Cambio del Color de Fondo
 
