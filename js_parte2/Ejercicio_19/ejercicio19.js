@@ -7,4 +7,3 @@ const nuevo_texto = "Soy un Texto malo >:C";
 boton.addEventListener("click", () => {
   cambiarTexto(texto, nuevo_texto);
 });
-console.log(`${texto.textContent}`);

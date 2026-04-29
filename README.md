@@ -7,8 +7,7 @@
 Dionicio Rodrigo Ezequiel / Dionicio-Rodrigo  
 Cruz Benavidez Rita Melina / rmelinacruzb  
 Mamaní Lucas Darío Joaquín / Lucas4414  
-Mamani Lucas Lautaro / lucasmamani-lxl
-
+Mamani Lucas Lautaro / lucasmamani-lxl  
 Leonel Maximiliano Aramayo Estrada / Leomax99
 
 ## Parte I (Ejercicios del 1 al 18)
@@ -89,6 +88,13 @@ Leonel Maximiliano Aramayo Estrada / Leomax99
 
 ### 19. Cambio de Texto
 
-Dentro de la pagina tenemos un parrafo y al boton (`<p>``<button>`), donde cada uno tiene un **#id** diferente para poder referenciarlo dentro del archivo _ejercicio19.js_ donde vamos a colocar un evento _listener_ el cual va a llamar a una función en cuanto el usuario presiones el boton.  
+Dentro de la pagina tenemos un parrafo y el boton (`<p>``<button>`), donde cada uno tiene un **#id** diferente para poder referenciarlo dentro del archivo _ejercicio19.js_ donde vamos a colocar un evento _listener_ el cual va a llamar a una función en cuanto el usuario presiones el boton.  
 Dentro del archivo obtenemos los elementos `texto_original``btnCambiar` y los guardamos en una constante cada una, aca tambien creamos el texto alternativo el cual vamos a utilizar. Por ultimo pero lo más importante se le agrega al boton el evento _listener_ donde este llamara a una función cuando el usuario haga un click, la función que se llama es `cambiarTexto(texto,nuevo_texto)` importada desde el archivo _funciones19.js_ que solo cambia el atributo `texto.textContent` por `nuevo_texto`.  
 Obviamente el archivo _ejercicio19.js_ esta dentro de `<script type="module" src="...">` y se incluye el stylesheet para todo el HTML, dentro del header con `<link rel="stylesheet" href="...">`.
+
+### 25. Cambio del Color de Fondo
+
+En la pagina solo se encuentra el boton y el body al cual vamos a cambiar de color, _ejercicio25.js_ va a ser el que contenga los elementos `<body>` y `<button>` mediante el `document.querySelect("body")` y `document.getElementById("btnCambiar")`.  
+Al boton se le agrega el evento _listener_ para poder detectar si el usuario le dio click al boton a su vez llamara a una función flecha que contendra la asignación del nuevo color de fondo `body.style.backroundColor` mediante una función importada `rgbAleatorio()`.  
+El archivo _funciones25.js_ contiene la función mencionada, lo que hace es retornar un valor cadena que representa el valor rgb del color en css. Pero para poder automatizar el cambio haremos una nueva función llamada `randomEntre(min,max)` que nos devolvera un número entero aleatorio entre 0 y 255. La tenemo que llamar una vez para cada valor individual de R, G y B. Mediante _Template Strings_ la devolvemos ordenada como `RGB(${r},${g},${b})` para que el atributo `backroundColor` reconozca que es un color RGB.  
+Ahora si tenemos a la pagina cambiando de color cada vez que le damos click al boton. Por ultimo agregamos un estilo css básico al boton y linkeamos cada archivo entre si. HTML con JS `<script type="module" scr="..."`, HTML con CSS `<link rel="stylesheet" href="..."/>` y el archivo _funciones25.js_ con _ejercicio25.js_ con un `export const ...`y un `import ... from "./funciones25.js"` sucesivamente.
