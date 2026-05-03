@@ -112,6 +112,10 @@ Mediante la función addEventListener(), asociamos el evento change al select de
 
 También utilizamos document.getElementById() para acceder a los elementos HTML desde JavaScript y options[indice].text para obtener el texto de las opciones seleccionadas. Finalmente, implementamos mensajes en consola mediante console.log() para mostrar qué país y qué capital fueron seleccionados en cada cambio realizado por el usuario.
 
+### 22, Transcripcion de texto en tiempo real
+
+Se presenta una página interactiva con el objetivo de capturar la entrada de un usuario y reflejarla de manera inmediata en otro elemento de la misma. En el HTML se implementa un campo de entrada de texto `<input type="text">` y un elemento de párrafo `<p>` destinado a mostrar el texto en tiempo real.
+La resolución se plantea de manera modular, utilizando `import` y `export` para compartir la funcion.En `ejercicio22.js` mediante `document.getElementById()` se accede a los elementos para manipular sus valores.A traves de `addEventListener()`, se vincula el evento input al campo de entrada para ejecutar la funcion `actualizartexto` que garantiza la actualizacion del contenido en el cuadro azul.Esta funcion utiliza la propiedad `textContent` para la modificacion y una estructura lógica para mantener el mensaje de espera al borrar el texto en el campo.
 
  ### 23, Cambio de color de fondo
 
@@ -128,7 +132,6 @@ La estructura condicional `if (texto.length > 20)` llevara a cabo la siguientes 
 Creo la constante `indiceColor` y con `Math.floor(Math.random() * cambioColor.length)` señalo in numero del indice del arreglo `cambioColor` de manera aleatoria para guardarla en la variable `color`.
 Ya por ultimo usamos las propiedades `txtIngresado.style.backgroundColor = color;` para agregar el cambio de color en el input y "white" en caso de que no se cumpla la condicion.
 
- 
 24. **Selección de Lenguaje **
  En la página se implementa un conjunto de botones de opción (radio) que permiten al usuario seleccionar un lenguaje de programación. Estos botones están agrupados mediante  `name="lenguaje"` para asegurar que solo se pueda seleccionar una opción a la vez. Además, se incluye un elemento `<p>` donde se mostrará el resultado seleccionado en tiempo real.
 En el archivo ejercicio24.js se obtienen los elementos del DOM utilizando `document.getElementsByName("lenguaje")` para acceder a todos los radio buttons, y `document.getElementById("resultado")` para el párrafo donde se mostrará el resultado.
