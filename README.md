@@ -105,35 +105,32 @@ Ya accedidos todos los elementos podemos añadir un _listener_ al boton para aga
 
 Antes de hacer el `alert()` agregamos un `if()` que verificara que los elementos esten no esten vacios y evitar tener un `alert()` vacío.  
  Por ultimo agregamos un estilo básico con `<link rel="stylesheet" href="...">`. y conectamos el código con el HTML con `<script type="module" src="...">`.
-### 21, Selección automática de países y capitales
- En este ejercicio desarrollamos una página web utilizando HTML, CSS y JavaScript, donde implementamos dos listas desplegables (<select>). La primera contiene distintos países de América y la segunda sus capitales correspondientes. Para lograr que ambas listas trabajen de manera relacionada, utilizamos JavaScript junto con el evento change, el cual detecta automáticamente cuándo el usuario cambia la opción seleccionada en la lista de países.
 
+### 21. Selección automática de países y capitales
+
+En este ejercicio desarrollamos una página web utilizando HTML, CSS y JavaScript, donde implementamos dos listas desplegables (<select>). La primera contiene distintos países de América y la segunda sus capitales correspondientes. Para lograr que ambas listas trabajen de manera relacionada, utilizamos JavaScript junto con el evento change, el cual detecta automáticamente cuándo el usuario cambia la opción seleccionada en la lista de países.  
 Mediante la función addEventListener(), asociamos el evento change al select de países. Dentro de esa función obtuvimos el índice de la opción seleccionada utilizando selectedIndex. Luego usamos ese mismo índice para modificar automáticamente la selección del segundo <select>, logrando que la capital correspondiente aparezca seleccionada sin intervención manual del usuario.
 
 También utilizamos document.getElementById() para acceder a los elementos HTML desde JavaScript y options[indice].text para obtener el texto de las opciones seleccionadas. Finalmente, implementamos mensajes en consola mediante console.log() para mostrar qué país y qué capital fueron seleccionados en cada cambio realizado por el usuario.
 
-### 22, Transcripcion de texto en tiempo real
+### 23. Cambio de color de fondo
 
-Se presenta una página interactiva con el objetivo de capturar la entrada de un usuario y reflejarla de manera inmediata en otro elemento de la misma. En el HTML se implementa un campo de entrada de texto `<input type="text">` y un elemento de párrafo `<p>` destinado a mostrar el texto en tiempo real.
-La resolución se plantea de manera modular, utilizando `import` y `export` para compartir la funcion.En `ejercicio22.js` mediante `document.getElementById()` se accede a los elementos para manipular sus valores.A traves de `addEventListener()`, se vincula el evento input al campo de entrada para ejecutar la funcion `actualizartexto` que garantiza la actualizacion del contenido en el cuadro azul.Esta funcion utiliza la propiedad `textContent` para la modificacion y una estructura lógica para mantener el mensaje de espera al borrar el texto en el campo.
+El objetivo era crear una celda para ingresar textos y que cambiara de color en otro elemento a tiempo real con lo que uno escribe en el cuadro. Primero empezamos por crear el archivo HTML con sus habituales etiquetas. Con `<h1>` le pongo de titulo "Fondos Coloridos" y luego creamos una seccion `<div>` en con la clase "container" usando "class". Dentro de esta etiqueta uso `<label for "IngreseTexto">` para crear una etiqueta para el `<input>`.
+En la etiqueta `<input>` le coloco el tipo de dato con `type = "text"` declaro el identificador con `id = IngreseTexto` y dejo un mensaje dentro cuadro de ingreso con `placeholder = "Ingrese un texto"`.
+Le coloque el parrafo "Escriba o teclée cualquier cosa para que ocurra la magia, ahre" con una frase solo para hacerla un poco comica con la etiqueta `<p>`.
+use el `<hr>` y el `<br>` para dividir la pagina y abajo empezar con el efecto de la pagina.
+cree otro `<div>` y dentro de dicha etiqueta cree un parrafo con identificador `<p> id = "txtIngresado"></p>` con ese identificador crearia el archivo JavaScript.
 
- ### 23, Cambio de color de fondo
-
- El objetivo era crear una celda para ingresar textos y que cambiara de color en otro elemento a tiempo real con lo que uno escribe en el cuadro. Primero empezamos por crear el archivo HTML con sus habituales etiquetas. Con `<h1>` le pongo de titulo "Fondos Coloridos" y luego creamos una seccion `<div>` en con la clase "container" usando "class". Dentro de esta etiqueta uso `<label for "IngreseTexto">` para crear una etiqueta para el `<input>`.
- En la etiqueta `<input>` le coloco el tipo de dato con `type = "text"` declaro el identificador con `id = IngreseTexto` y dejo un mensaje dentro cuadro de ingreso con `placeholder = "Ingrese un texto"`.
- Le coloque el parrafo  "Escriba o teclée cualquier cosa para que ocurra la magia, ahre" con una frase solo para hacerla un poco comica con la etiqueta `<p>`.
- use el `<hr>` y el `<br>` para dividir la pagina y abajo empezar con el efecto de la pagina.
- cree otro `<div>` y dentro de dicha etiqueta cree un parrafo con identificador `<p> id = "txtIngresado"></p>`  con ese identificador crearia el archivo JavaScript.
-
- En el JS creamos las variables `const`: "txtIng" y "txtIngresado" y con `document.getElementById()` tomamos los identificadores del HTML "IngreseTexto" y "txtIngresado" (mo se me ocurrio otro nombre xd).
- Luego creo el arreglo `cambioColor` con `const` y le agrego varios colores con commilay y en ingles. Ahora hagoel evento `txtIng.addEventListener` coloco "input" como evento y con una funcion flecha describo el evento:
+En el JS creamos las variables `const`: "txtIng" y "txtIngresado" y con `document.getElementById()` tomamos los identificadores del HTML "IngreseTexto" y "txtIngresado" (mo se me ocurrio otro nombre xd).
+Luego creo el arreglo `cambioColor` con `const` y le agrego varios colores con commilay y en ingles. Ahora hagoel evento `txtIng.addEventListener` coloco "input" como evento y con una funcion flecha describo el evento:
 La variable `const texto = txtIng.value;` guardara y mostrara la cadena ingresada.
 La estructura condicional `if (texto.length > 20)` llevara a cabo la siguientes acciones:
 Creo la constante `indiceColor` y con `Math.floor(Math.random() * cambioColor.length)` señalo in numero del indice del arreglo `cambioColor` de manera aleatoria para guardarla en la variable `color`.
 Ya por ultimo usamos las propiedades `txtIngresado.style.backgroundColor = color;` para agregar el cambio de color en el input y "white" en caso de que no se cumpla la condicion.
 
-24. **Selección de Lenguaje **
- En la página se implementa un conjunto de botones de opción (radio) que permiten al usuario seleccionar un lenguaje de programación. Estos botones están agrupados mediante  `name="lenguaje"` para asegurar que solo se pueda seleccionar una opción a la vez. Además, se incluye un elemento `<p>` donde se mostrará el resultado seleccionado en tiempo real.
+## 24. **Selección de Lenguaje **
+
+En la página se implementa un conjunto de botones de opción (radio) que permiten al usuario seleccionar un lenguaje de programación. Estos botones están agrupados mediante `name="lenguaje"` para asegurar que solo se pueda seleccionar una opción a la vez. Además, se incluye un elemento `<p>` donde se mostrará el resultado seleccionado en tiempo real.
 En el archivo ejercicio24.js se obtienen los elementos del DOM utilizando `document.getElementsByName("lenguaje")` para acceder a todos los radio buttons, y `document.getElementById("resultado")` para el párrafo donde se mostrará el resultado.
 A cada botón de opción se le agrega un `addEventListener("change")`, que permite detectar cuándo el usuario selecciona una opción diferente. Cuando ocurre este evento, se ejecuta una función flecha que llama a la función `mostrarSeleccion()`.
 El archivo funciones24.js contiene dicha función exportada, la cual recibe como parámetros el elemento HTML donde se mostrará el resultado y el valor seleccionado. Dentro de la función se utiliza `textContent` para actualizar el contenido del párrafo dinámicamente, mostrando el lenguaje elegido. Además, se utiliza `console.log()` para imprimir el valor seleccionado en la consola.
