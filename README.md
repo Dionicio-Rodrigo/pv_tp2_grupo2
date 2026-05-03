@@ -106,6 +106,24 @@ Ya accedidos todos los elementos podemos añadir un _listener_ al boton para aga
 Antes de hacer el `alert()` agregamos un `if()` que verificara que los elementos esten no esten vacios y evitar tener un `alert()` vacío.  
  Por ultimo agregamos un estilo básico con `<link rel="stylesheet" href="...">`. y conectamos el código con el HTML con `<script type="module" src="...">`.
 
+ ### 23, Cambio de color de fondo
+
+ El objetivo era crear una celda para ingresar textos y que cambiara de color en otro elemento a tiempo real con lo que uno escribe en el cuadro. Primero empezamos por crear el archivo HTML con sus habituales etiquetas. Con `<h1>` le pongo de titulo "Fondos Coloridos" y luego creamos una seccion `<div>` en con la clase "container" usando "class". Dentro de esta etiqueta uso `<label for "IngreseTexto">` para crear una etiqueta para el `<input>`.
+ En la etiqueta `<input>` le coloco el tipo de dato con `type = "text"` declaro el identificador con `id = IngreseTexto` y dejo un mensaje dentro cuadro de ingreso con `placeholder = "Ingrese un texto"`.
+ Le coloque el parrafo  "Escriba o teclée cualquier cosa para que ocurra la magia, ahre" con una frase solo para hacerla un poco comica con la etiqueta `<p>`.
+ use el `<hr>` y el `<br>` para dividir la pagina y abajo empezar con el efecto de la pagina.
+ cree otro `<div>` y dentro de dicha etiqueta cree un parrafo con identificador `<p> id = "txtIngresado"></p>`  con ese identificador crearia el archivo JavaScript.
+
+ En el JS creamos las variables `const`: "txtIng" y "txtIngresado" y con `document.getElementById()` tomamos los identificadores del HTML "IngreseTexto" y "txtIngresado" (mo se me ocurrio otro nombre xd).
+ Luego creo el arreglo `cambioColor` con `const` y le agrego varios colores con commilay y en ingles. Ahora hagoel evento `txtIng.addEventListener` coloco "input" como evento y con una funcion flecha describo el evento:
+La variable `const texto = txtIng.value;` guardara y mostrara la cadena ingresada.
+La estructura condicional `if (texto.length > 20)` llevara a cabo la siguientes acciones:
+Creo la constante `indiceColor` y con `Math.floor(Math.random() * cambioColor.length)` señalo in numero del indice del arreglo `cambioColor` de manera aleatoria para guardarla en la variable `color`.
+Ya por ultimo usamos las propiedades `txtIngresado.style.backgroundColor = color;` para agregar el cambio de color en el input y "white" en caso de que no se cumpla la condicion.
+
+ 
+
+
 ### 25. Cambio del Color de Fondo
 
 En la pagina solo se encuentra el boton y el body al cual vamos a cambiar de color, _ejercicio25.js_ va a ser el que contenga los elementos `<body>` y `<button>` mediante el `document.querySelect("body")` y `document.getElementById("btnCambiar")`.  
