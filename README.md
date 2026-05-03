@@ -105,6 +105,13 @@ Ya accedidos todos los elementos podemos añadir un _listener_ al boton para aga
 
 Antes de hacer el `alert()` agregamos un `if()` que verificara que los elementos esten no esten vacios y evitar tener un `alert()` vacío.  
  Por ultimo agregamos un estilo básico con `<link rel="stylesheet" href="...">`. y conectamos el código con el HTML con `<script type="module" src="...">`.
+### 21, Selección automática de países y capitales
+ En este ejercicio desarrollamos una página web utilizando HTML, CSS y JavaScript, donde implementamos dos listas desplegables (<select>). La primera contiene distintos países de América y la segunda sus capitales correspondientes. Para lograr que ambas listas trabajen de manera relacionada, utilizamos JavaScript junto con el evento change, el cual detecta automáticamente cuándo el usuario cambia la opción seleccionada en la lista de países.
+
+Mediante la función addEventListener(), asociamos el evento change al select de países. Dentro de esa función obtuvimos el índice de la opción seleccionada utilizando selectedIndex. Luego usamos ese mismo índice para modificar automáticamente la selección del segundo <select>, logrando que la capital correspondiente aparezca seleccionada sin intervención manual del usuario.
+
+También utilizamos document.getElementById() para acceder a los elementos HTML desde JavaScript y options[indice].text para obtener el texto de las opciones seleccionadas. Finalmente, implementamos mensajes en consola mediante console.log() para mostrar qué país y qué capital fueron seleccionados en cada cambio realizado por el usuario.
+
 
  ### 23, Cambio de color de fondo
 
