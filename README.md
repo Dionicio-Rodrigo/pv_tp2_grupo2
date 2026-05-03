@@ -122,7 +122,13 @@ Creo la constante `indiceColor` y con `Math.floor(Math.random() * cambioColor.le
 Ya por ultimo usamos las propiedades `txtIngresado.style.backgroundColor = color;` para agregar el cambio de color en el input y "white" en caso de que no se cumpla la condicion.
 
  
-
+24. **Selección de Lenguaje **
+ En la página se implementa un conjunto de botones de opción (radio) que permiten al usuario seleccionar un lenguaje de programación. Estos botones están agrupados mediante  `name="lenguaje"` para asegurar que solo se pueda seleccionar una opción a la vez. Además, se incluye un elemento `<p>` donde se mostrará el resultado seleccionado en tiempo real.
+En el archivo ejercicio24.js se obtienen los elementos del DOM utilizando `document.getElementsByName("lenguaje")` para acceder a todos los radio buttons, y `document.getElementById("resultado")` para el párrafo donde se mostrará el resultado.
+A cada botón de opción se le agrega un `addEventListener("change")`, que permite detectar cuándo el usuario selecciona una opción diferente. Cuando ocurre este evento, se ejecuta una función flecha que llama a la función `mostrarSeleccion()`.
+El archivo funciones24.js contiene dicha función exportada, la cual recibe como parámetros el elemento HTML donde se mostrará el resultado y el valor seleccionado. Dentro de la función se utiliza `textContent` para actualizar el contenido del párrafo dinámicamente, mostrando el lenguaje elegido. Además, se utiliza `console.log()` para imprimir el valor seleccionado en la consola.
+Finalmente se aplican estilos básicos mediante CSS para mejorar la presentación visual de la página, y se vinculan correctamente los archivos: el HTML con el JavaScript usando `<script type="module" src="js/ejercicio24.js"></script>`, el HTML con el CSS mediante `<link rel="stylesheet">`, y los archivos JavaScript entre sí mediante el uso de `export` e `import`.
+Con esto la página permite interactuar con el usuario y actualizando el contenido en tiempo real utilizando eventos y manipulación del DOM.
 
 ### 25. Cambio del Color de Fondo
 
